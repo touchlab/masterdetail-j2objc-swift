@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "442CAFEF4972DB2CBE4C74225A4CA6164FE37960",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "22EBEA5EFC2DD92D88F841E0B400372583D0C095" : 0,
+    "442CAFEF4972DB2CBE4C74225A4CA6164FE37960" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "66CC3CB0-F978-4692-89D2-6AE7C501E2DA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "22EBEA5EFC2DD92D88F841E0B400372583D0C095" : "masterdetail",
+    "442CAFEF4972DB2CBE4C74225A4CA6164FE37960" : "masterdetail-j2objc-swift"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "masterdetail-ios",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "masterdetail-ios\/masterdetail-ios.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kirkvogen\/masterdetail-j2objc-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22EBEA5EFC2DD92D88F841E0B400372583D0C095"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kirkvogen\/masterdetail-j2objc-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "442CAFEF4972DB2CBE4C74225A4CA6164FE37960"
+    }
+  ]
+}

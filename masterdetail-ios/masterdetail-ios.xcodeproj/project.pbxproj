@@ -285,6 +285,8 @@
 		4A71CCB619EF652C00A3535F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Kirk Vogen";
 				TargetAttributes = {
@@ -483,7 +485,7 @@
 					"${DERIVED_FILES_DIR",
 				);
 				INFOPLIST_FILE = "masterdetail-ios/Info.plist";
-				J2OBJC_HOME = "${SRCROOT}/../../j2objc-dist";
+				J2OBJC_HOME = "/Users/kgalligan/bin/j2objc-1.0.1";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
 				OTHER_LDFLAGS = "-ljre_emul";
@@ -503,7 +505,7 @@
 					"${DERIVED_FILES_DIR",
 				);
 				INFOPLIST_FILE = "masterdetail-ios/Info.plist";
-				J2OBJC_HOME = "${SRCROOT}/../../j2objc-dist";
+				J2OBJC_HOME = "/Users/kgalligan/bin/j2objc-1.0.1";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
 				OTHER_LDFLAGS = "-ljre_emul";

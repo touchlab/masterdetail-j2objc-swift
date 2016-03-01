@@ -25,7 +25,7 @@ class MasterViewController: UITableViewController {
 
     required init(coder decoder: NSCoder) {
         detailService = FlatFileDetailService(storageService: LocalStorageService())
-        super.init(coder: decoder)
+        super.init(coder: decoder)!
     }
     
     override func awakeFromNib() {
@@ -51,7 +51,9 @@ class MasterViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
             let controllers = split.viewControllers
-            self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
+
+            //Don't know if this is ok KPG
+            self.detailViewController = controllers[controllers.count-1] as? DetailViewController
         }
     }
 
@@ -70,7 +72,7 @@ class MasterViewController: UITableViewController {
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         //self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let detailController = storyboard.instantiateViewControllerWithIdentifier("detailView") as DetailViewController
+        let detailController = storyboard.instantiateViewControllerWithIdentifier("detailView") as! DetailViewController
         detailController.listId = listId
         self.navigationController?.pushViewController(detailController, animated: false)
     }
@@ -79,8 +81,8 @@ class MasterViewController: UITableViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 let listId = listIds[indexPath.row]
                 
                 controller.listId = listId
@@ -104,7 +106,7 @@ class MasterViewController: UITableViewController {
         
         for var i = 0; i < listSize; i++
         {
-            let list = lists.getWithInt(CInt(i)) as DetailEntry
+            let list = lists.getWithInt(CInt(i)) as! DetailEntry
             listIds += [list.getId()]
         }
         
